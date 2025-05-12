@@ -13,8 +13,11 @@ const port = 3000;
 app.use(cors());
 
 // 将RSS日期格式转换为指定格式
+// function formatDate(pubDate) {
+//     return moment(pubDate).format('YYYY-MM-DD HH:mm:ss');
+// }
 function formatDate(pubDate) {
-    return moment(pubDate).format('YYYY-MM-DD HH:mm:ss');
+    return moment(pubDate).utcOffset('+08:00').format('YYYY-MM-DD HH:mm:ss');
 }
 
 // 从description中提取标签和内容

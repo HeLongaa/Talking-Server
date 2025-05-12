@@ -1,5 +1,6 @@
 FROM hub.040720.xyz/library/node:22-alpine
 
+
 # 创建工作目录
 WORKDIR /app
 
