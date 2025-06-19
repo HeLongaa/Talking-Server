@@ -36,6 +36,11 @@ npm run dev
 ```bash
 npm start
 ```
+### Docker 
+
+```bash
+docker run -d -p 3000:3000 helong05/talk-server:latest
+```
 
 服务器将在 http://localhost:3000 启动。
 
